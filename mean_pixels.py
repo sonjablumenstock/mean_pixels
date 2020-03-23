@@ -11,14 +11,12 @@ def calculate_pixel_brightness(x, y, z):
 
 
 pixel = {'red': 100, 'green': 0, 'blue': 0}
-pixel_brightness = calculate_pixel_brightness(pixel['red'], pixel['green'], pixel['blue'])
-
 pixel2 = {'red': 50, 'green': 100, 'blue': 0}
-pixel_brightness2 = calculate_pixel_brightness(pixel2['red'], pixel2['green'], pixel2['blue'])
+pixels = [pixel, pixel2]
 
+pixel_brightnesses = [calculate_pixel_brightness(pixel['red'], pixel['green'], pixel['blue']) for pixel in pixels]
 
-
-mean_brightness = statistics.mean([pixel_brightness, pixel_brightness2])
+mean_brightness = statistics.mean(pixel_brightnesses)
 print(mean_brightness)
 
 
