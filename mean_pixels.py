@@ -1,23 +1,10 @@
 # This is my project
-
-# Python knows how to du tuple unpacking for setting data
-# e.g. x, y = 1, 2
-
 import statistics
 
 
-def calculate_pixel_brightness(x, y, z):
-    """
-
-    Args:
-        x (int): the red value of the pixel
-        y (int): the green value of the pixel
-        z (int): the blue value of the pixel
-
-    Returns: the brightness of the pixel
-
-    """
-    return statistics.mean([x, y, z])
+def calculate_pixel_brightness(red: int, green: int, blue: int) -> float:
+    """Calculates the brightness of a pixel from its r, g, b values"""
+    return statistics.mean([red, green, blue])
 
 
 pixels = [
