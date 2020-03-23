@@ -1,3 +1,5 @@
+# This is my project
+
 x = 100  # Red value
 x2 = 50
 y = 0  # Green value
@@ -14,5 +16,3 @@ result2 = (x2 + y2 + z2) / 3
 # Get mean brightness
 result3 = (result + result2) / 2
 print(result3)
-
-hjh
