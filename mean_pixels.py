@@ -14,5 +14,5 @@ pixel_brightness = (red_value + green_value + blue_value) / 3
 pixel_brightness2 = (red_value2 + green_value2 + blue_value2) / 3
 
 
-mean_pixel_brightness = (pixel_brightness + pixel_brightness2) / 2
-print(mean_pixel_brightness)
+mean_brightness = (pixel_brightness + pixel_brightness2) / 2
+print(mean_brightness)
